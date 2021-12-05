@@ -24,7 +24,7 @@ def comvert():
                   [py.Button("Converter",key="convert",font="Arial 12 "),] ]
 
 
-             janela = py.Window("Conversor de PDF", layout, size=(400, 300))
+             janela = py.Window("Conversor de PDF", layout, size=(330, 300))
 
              while True:
 
@@ -36,6 +36,8 @@ def comvert():
                 py.popup_notify("Aguarde seu Arquivo sera convertido")
                 pdf_convert(arq_pfd, arq_convert)
                 py.popup("Concluido",font="arial 12")
+              if event == "Exit" or event == py.WIN_CLOSED:
+                  break
 
 
 
