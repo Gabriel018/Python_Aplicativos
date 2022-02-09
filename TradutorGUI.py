@@ -4,7 +4,9 @@ import PySimpleGUI as pg
 class Tradutor:
     def __init__(self):
 
-        self.layout = [ [pg.InputText(size=(100,20))]
+        self.layout = [ [pg.Output(size=(60,20))],
+                        [pg.Button('Traduzir')],
+                        [pg.Output(size=(60,20))]
                         ]
 
     def iniciar(self):
