@@ -31,11 +31,11 @@ root.geometry('600x400')
 texto =  Text(root,height='10',width='60')
 texto.grid(row='0',column='0')
 
-Translater =  Button(root,text='Traduzir',font='40', command=Translater)
-Translater.grid(row='1',column='1')
+Translater =  Button(root,text='Traduzir',font='30', command=Translater)
+Translater.grid(row='0',column='1')
 
-Clear_btn =  Button(root,text='Limpar',font='40',command=Clear)
-Clear_btn.grid(row='1',column='2')
+Clear_btn =  Button(root,text='Limpar',font='30',command=Clear)
+Clear_btn.grid(row='1',column='1')
 
 Traducion =  Text(root,height='10',width='60')
 Traducion.grid(row='2',column='0')
