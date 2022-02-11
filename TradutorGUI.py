@@ -1,12 +1,13 @@
 import PySimpleGUI as pg
-
+import googletrans
 
 class Tradutor:
     def __init__(self):
 
-        self.layout = [ [pg.Output(size=(60,20))],
-                        [pg.Button('Traduzir')],
-                        [pg.Output(size=(60,20))]
+        self.layout = [ [pg.Output(size=(60,15))],
+                        [pg.Combo(['1','2','3'])],
+                        [pg.Button('Traduzir'),pg.Button('Limpar')],
+                        [pg.Output(size=(60,15))]
                         ]
 
     def iniciar(self):
