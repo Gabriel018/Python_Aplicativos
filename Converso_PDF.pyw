@@ -1,5 +1,3 @@
-
-
 from pdf2docx import parse
 from typing import Tuple
 import PySimpleGUI as py
@@ -18,7 +16,7 @@ class convert:
                        docx_file=arq_convert,
                        pages=pages)
 
-       return result
+        return result
 
     def comvert(self):
         # Quando salvar o arquivo salvar ele com a extençao  " .docx "
