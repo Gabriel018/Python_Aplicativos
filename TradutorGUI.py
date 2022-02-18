@@ -10,7 +10,7 @@ class Tradutor:
 
         self.layout = [ [pg.Output(size=(60,15),key='txt_original')],
                         [pg.Combo(lang_list,key='lang_atual')],
-                        [pg.Button('Traduzir'),pg.Button('Limpar')],
+                        [pg.Button('Traduzir'),pg.Button('Limpar',key='clear')],
                         [pg.Output(size=(60,15),key='txt_traduzir')],
                         [pg.Combo(lang_list,key='lang_traduzir')]
                         ]
@@ -40,6 +40,9 @@ class Tradutor:
             words = words.translate(from_lang=from_languege_key, to=to_languege_key)
             txt_traduzir.insert()
 
+            if event == "clear":
+                pg.Popup('Opa')
+                print(txt_original)
 
 
             if event == pg.WIN_CLOSED or event == 'Cancel':  # if user closes window or clicks cancel
